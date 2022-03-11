@@ -4,4 +4,4 @@ class Paciente:
 	altura = 0.0
 
 	def calcularIMC(self):
-		return self.peso * self.altura / 2
+		return self.peso / (self.altura ** 2)
