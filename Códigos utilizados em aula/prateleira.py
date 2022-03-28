@@ -11,11 +11,14 @@ class prateleira:
 		else:
 			self.lproduto = produto
 
+
 	def mudaCorredor(self, corredor):
 		self.idCorredor = corredor
 
+
 	def mudaLado(self, lado):
 		self.idLado = lado
+
 
 	def exibeProdutos(self):
 		if self.idLado:
@@ -31,12 +34,14 @@ class prateleira:
 			for item in self.lproduto:
 				print(" - %s"%(item))
 
+
 	def insereProduto(self, produto):
 		if (produto in self.lproduto):
 			print("Produto já está na prateleira.")
 		else:
 			self.lproduto.append(produto)
 			print("%s inserido na prateleira."%(produto))
+
 
 	def removeProduto(self, produto):
 		if not (produto in self.lproduto):
